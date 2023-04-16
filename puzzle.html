@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Puzzle Page</title>
+    <!-- Add any CSS or JavaScript libraries here -->
+<style>
+       /* Reset default margin and padding for all elements */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set body background color and font style */
+body {
+  background-color: burlywood;
+  font-family: Arial, sans-serif;
+}
+
+/* Center align the main container */
+.container {
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 20px;
+}
+
+/* Style for the title */
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Style for the login form container */
+.login-form-container {
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+}
+
+/* Style for the form input fields */
+.form-input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+/* Style for the login button */
+.login-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+.column2 {
+        text-align: center;
+      }
+      #bottom {
+        position: absolute;
+        bottom: 8px;
+        right: 16px;
+      }
+/* Style for the error message */
+.error-message {
+  color: goldenrod;
+  margin-top: 10px;
+}
+</style>
+</head>
+<body>
+    <h1>Clue {{ 1 }}</h1>
+    <p>SEARCH FOR THE LINK ON THE PAGE.
+    </p>
+    <form action="{{ url_for('puzzle', email=email) }}" method="post">
+        <label for="answer">Enter your answer:</label>
+        <input type="text" id="answer" name="answer" required>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+    <div class="column2">
+        <a href="https://www.google.com/imgres?imgurl=https%3A%2F%2Fpsychologia.co%2Fwp-content%2Fuploads%2F2016%2F01%2Fcreativity-test.jpg&tbnid=mVRZBoa0Mwx06M&vet=12ahUKEwir_MTF463-AhWG13MBHU2-AJoQMygAegUIARDDAQ..i&imgrefurl=https%3A%2F%2Fpsychologia.co%2Fcreativity-test%2F&docid=jtZFmDFmjm91RM&w=550&h=364&q=images%20that%20test%20curiosity&ved=2ahUKEwir_MTF463-AhWG13MBHU2-AJoQMygAegUIARDDAQ">What is the object in this</a>
+      </div>
+      <h1>Clue {{ 2 }}</h1>
+      <p>HOW MANY RED CARS ARE THERE IN THE PICTURE.
+      </p>
+      <form action="{{ url_for('puzzle', email=email) }}" method="post">
+          <label for="answer">Enter your answer:</label>
+          <input type="text" id="answer" name="answer" required>
+          <br>
+          <input type="submit" value="Submit">
+      </form>
+      <div class="column3">
+        <a href="<div class="column2">
+            <a href="https://www.google.com/imgres?imgurl=https%3A%2F%2Fthumbs.dreamstime.com%2Fb%2Fcars-coin-stacks-circular-array-d-rendered-illustration-multiple-positioned-arranged-pattern-whole-72319662.jpg&tbnid=IgMRyw8vEHotnM&vet=12ahUKEwi-25vxxq7-AhXvG7cAHTA2AeYQMygAegUIARDIAQ..i&imgrefurl=https%3A%2F%2Fwww.dreamstime.com%2Fstock-illustration-two-red-cars-d-rendered-illustration-positioned-side-side-facing-different-directions-composition-image72322013&docid=GL6AFYxe67D-RM&w=800&h=559&q=multiple%20red%20cars%20in%20a%20picture&ved=2ahUKEwi-25vxxq7-AhXvG7cAHTA2AeYQMygAegUIARDIAQ">Clink on this link</a>
+          </div></a>
+      </div>
+      <h1>Clue {{ 3 }}</h1>
+      <p>WHAT IS THE OTHER WORD FOR FAILURES?
+      </p>
+      <form action="{{ url_for('puzzle', email=email) }}" method="post">
+          <label for="answer">Enter your answer:</label>
+          <input type="text" id="answer" name="answer" required>
+          <br>
+          <input type="submit" value="Submit">
+      </form>
+      <h1>Clue {{ 4 }}</h1>
+      <p>"Think of other use of a paperclip other than holding papers together."
+      </p>
+      <form action="{{ url_for('puzzle', email=email) }}" method="post">
+          <label for="answer">Enter your answer:</label>
+          <input type="text" id="answer" name="answer" required>
+          <br>
+          <input type="submit" value="Submit">
+      </form>
+      <h1>Clue {{ 5 }}</h1>
+      <p>"Tell us will you have a successful collaboration in a team as a member?."
+      </p>
+      <form action="{{ url_for('puzzle', email=email) }}" method="post">
+          <label for="answer">Enter your answer:</label>
+          <input type="text" id="answer" name="answer" required>
+          <br>
+          <input type="submit" value="Submit">
+      </form>
+</body>
+</html>

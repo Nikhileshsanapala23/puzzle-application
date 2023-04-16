@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Interactive Puzzle</title>
+    <style>
+    /* Reset default margin and padding for all elements */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set body background color and font style */
+body {
+  background-color: burlywood;
+  font-family: Arial, sans-serif;
+}
+
+/* Center align the main container */
+.container {
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 20px;
+}
+
+/* Style for the title */
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Style for the login form container */
+.login-form-container {
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+}
+
+/* Style for the form input fields */
+.form-input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+/* Style for the login button */
+.login-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+/* Style for the error message */
+.error-message {
+  color: red;
+  margin-top: 10px;
+}
+</style>
+</head>
+<body>
+    <center>
+    <h1>Welcome to the Interactive Puzzle!</h1>
+    <p>Please register to start the game.</p>
+    <a href="{{ url_for('register') }}">Register</a></center>
+</body>
+</html>
